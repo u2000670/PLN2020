@@ -1,7 +1,7 @@
 package com.company.PLNPastYears;
 import java.util.*;
 
-//solution from Sam : https://github.com/samweihong/PLN2020-Closed/blob/master/src/C.java
+//my code starts here
 public class B_KillProcess {
     static Scanner sc = new Scanner(System.in);
     static Map<Integer, Node> map = new HashMap<>();
@@ -30,7 +30,9 @@ public class B_KillProcess {
 
         }
     }
+    //my code ends here
 
+    //below this line is from Sam's code : https://github.com/samweihong/PLN2020-Closed/blob/master/src/C.java
     public static void main(String[] args) {
         int n = sc.nextInt();
         int q = sc.nextInt();
@@ -51,13 +53,13 @@ public class B_KillProcess {
 
     static class Node {
         int pid;
-        int ppid;
+        int ppid; //added
         int memory;
         List<Integer> children;
 
         public Node(int pid, int memory, int ppid) {
             this.pid = pid;
-            this.ppid = ppid;
+            this.ppid = ppid; // added
             this.memory = memory;
             children = new ArrayList<>();
         }
